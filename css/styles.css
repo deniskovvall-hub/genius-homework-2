@@ -1,0 +1,588 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v51-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v51-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v21-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --primary-color-blue: #2b7fff;
+  --primary-color-dark-blue: #011c44;
+  --primary-white: #fff;
+  --secondary-color-yelow: #ffd02b;
+  --secondary-color-blue: #011f4a;
+  --secondary-color-light-gray: #747272;
+  --secondary-color-gray: #4a4a4a;
+}
+
+/* all web */
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body */
+
+body {
+  color: var(--primary-color-dark-blue);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  padding: 32px 0px 127px;
+  background:
+    linear-gradient(
+      91deg,
+      rgba(255, 255, 255, 1) 10%,
+      rgba(255, 255, 255, 0.85) 26%,
+      rgba(255, 255, 255, 0.19) 53%,
+      rgba(255, 255, 255, 0) 74%
+    ),
+    url(../images/background-hero-section.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.second-section {
+  padding: 0px 0px 176px 0px;
+}
+
+.third-section {
+  padding: 0px 0px 96px 0px;
+}
+
+.fourth-section {
+  padding: 0px 0px 96px 0px;
+}
+
+.fifth-section {
+  padding: 0px 205px 96px 176px;
+}
+
+/* container */
+
+.header {
+  padding: 32px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  width: 530px;
+  margin-left: 110px;
+}
+
+/* header */
+
+.header-logo {
+  color: var(--primary-color-blue);
+  font-size: 22px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.header-link {
+  color: var(--primary-color-dark-blue);
+}
+
+.header-link:hover {
+  color: var(--primary-color-blue);
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header-link {
+  display: flex;
+  gap: 36px;
+}
+
+.svg-container-header {
+  display: flex;
+  gap: 32px;
+}
+
+/* main */
+
+.first-text {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  color: var(--primary-color-blue);
+  font-family: "Play", sans-serif;
+  text-transform: capitalize;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  margin-bottom: 40px;
+}
+
+.advice {
+  color: var(--secondary-color-gray);
+  line-height: 1.5;
+}
+
+.change-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.text-change {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.change-img {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.change-text {
+  margin-bottom: 40px;
+}
+
+.to-procedurse {
+  border-radius: 50%;
+}
+
+.after-procedurse {
+  border-radius: 50%;
+}
+
+.change {
+  line-height: 1.16;
+  font-weight: 800;
+  margin-right: 32px;
+  font-size: 64px;
+  text-transform: capitalize;
+  color: var(--primary-color-dark-blue);
+}
+
+.bz-blue {
+  color: var(--primary-color-blue);
+  font-size: 64px;
+  text-transform: capitalize;
+}
+
+.hospital {
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.article-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+
+.article {
+  width: 316px;
+  height: 181px;
+  text-align: center;
+  font-weight: 400;
+  background-color: grey; /* Щоб видно було результат */
+  border-radius: 32px;
+  padding: 29px 0px 24px 0px;
+}
+
+.article span {
+  line-height: 1.3;
+}
+
+.dark-text {
+  text-transform: capitalize;
+  color: var(--primary-color-dark-blue);
+  font-weight: 600;
+}
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: var(--primary-color-dark-blue);
+  border: 1px solid var(--primary-color-dark-blue);
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  background-color: var(--primary-color-blue);
+  fill: var(--primary-white);
+}
+.arrow-button:last-child svg {
+  transform: rotate(180deg);
+}
+
+.article {
+  line-height: 1.3;
+}
+
+.procedures {
+  display: inline;
+}
+
+.procedur-container{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.procedur-container-1 {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.photo-article {
+  width: 344px;
+  height: 456px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 120px;
+}
+
+.photo-article-1 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 47%,
+      rgba(1, 28, 68, 0.73) 83%,
+      rgba(1, 28, 68, 1) 99%
+    ),
+    url("../images/crem-procedur.png");
+}
+
+.photo-article-2 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 47%,
+      rgba(1, 28, 68, 0.73) 83%,
+      rgba(1, 28, 68, 1) 99%
+    ),
+    url("../images/injection.jpg");
+}
+
+.photo-article-3 {
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 47%,
+      rgba(1, 28, 68, 0.73) 83%,
+      rgba(1, 28, 68, 1) 99%
+    ),
+    url("../images/third-procedur.jpg");
+}
+
+.text-procedur-art {
+  padding: 372px 77px 32px 115px;
+  text-align: center;
+  color: white;
+}
+
+.people {
+  color: var(--primary-color-dark-blue);
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.us {
+  color: var(--primary-color-blue);
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.our {
+  color: var(--primary-color-dark-blue);
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.our span {
+  color: var(--primary-color-blue);
+}
+
+.find {
+  color: var(--primary-color-dark-blue);
+  font-family: "Play", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.find span {
+  color: var(--primary-color-blue);
+  display: inline;
+}
+
+.blue-box {
+  width: 423px;
+  height: 481px;
+  border: 4px solid var(--primary-color-dark-blue);
+  border-radius: 32px;
+  background-color: var(--primary-color-dark-blue);
+}
+
+.contact-map{
+  flex-shrink: 0;
+  border-radius: 32px;
+  width: 605px;
+  height: 481px;
+}
+
+.text-in-blue-box {
+  color: var(--primary-white);
+  font-weight: 600;
+  line-height: 1.18;
+  text-align: center;
+  padding: 48px 57px;
+  font-size: 22px;
+  margin: 0;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.text-in-blue-box span {
+  color: var(--primary-color-blue);
+  display: inline;
+}
+/* footer */
+
+.footer-logo a {
+  color: var(--primary-color-blue);
+  font-size: 22px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.footer {
+  background-color: var(--primary-color-dark-blue);
+  padding: 56px 0px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-nav {
+  flex-basis: 50%;
+  display: flex;
+  gap: 186px;
+}
+
+.footer-adress {
+  display: flex;
+  gap: 186px;
+}
+
+.nav-footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-adress-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.copy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-link {
+  color: var(--primary-white);
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  color: var(--primary-color-blue);
+}
+
+.address-link {
+  color: var(--primary-white);
+  font-size: 16px;
+}
+
+.address-link:hover {
+  color: var(--primary-color-blue);
+}
+
+.policy {
+  color: var(--primary-white);
+  font-size: 16px;
+}
+
+.address-copy {
+  color: #747272;
+  font-size: 16px;
+}
+
+.policy:hover {
+  color: var(--primary-color-blue);
+}
+
+/* ul */
+
+.nav-footer-link {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+/* btw */
+
+.order-call {
+  padding: 16px 32px;
+  color: var(--primary-white);
+  background-color: var(--primary-color-blue);
+  border: 2px solid var(--primary-color-blue);
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+/* Я ПІЗНІШЕ КНОПКУ НОРМАЛЬНО ПОСТАВЛЮ  */
+
+.btn-blue-text {
+  border-radius: 32px;
+  background-color: var(--primary-color-blue);
+  color: var(--primary-white);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 16px 32px;
+  line-height: 1.16;
+  border: 1px solid var(--primary-color-blue);
+  cursor: pointer;
+}
+
+.order-call:hover {
+  background-color: transparent;
+  color: var(--primary-color-dark-blue);
+}
+
+/* other */
+
+/* container */
+
+/* span */
+
+.change-text:nth-child(1) {
+  display: block;
+}
+
+.hostipal,
+span {
+  display: block;
+}
