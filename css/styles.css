@@ -232,12 +232,6 @@ body {
   height: 328px;
 }
 
-.change-img {
-  display: flex;
-  margin-left: 32px;
-  width: 500px;
-}
-
 .container-to-procedurse {
   align-self: flex-start;
 }
