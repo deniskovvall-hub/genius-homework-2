@@ -134,7 +134,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1288px;
+  max-width: 1280px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -198,17 +198,19 @@ body {
 .advice {
   color: var(--secondary-color-gray);
   line-height: 1.5;
+  width: 238px;
+  font-size: 12px;
 }
 
 .change-flex {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 40px;
+  margin: 0 auto;
+  width: 100%;
+
 }
 
 .text-change {
-  max-width: 700px;
+  width: 710px;
   display: flex;
   flex-direction: column;
 }
@@ -217,17 +219,37 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  width: 500px;
 }
 
 .change-text {
   margin-bottom: 40px;
 }
 
-.to-procedurse {
+.after-procedurse {
   border-radius: 50%;
+  width: 343px;
+  height: 328px;
 }
 
+.change-img {
+  display: flex;
+  margin-left: 32px;
+  width: 500px;
+}
+
+.container-to-procedurse {
+  align-self: flex-start;
+}
+
+.container-after-procedurse {
+  align-self: flex-end;
+}
+
+.to-procedurse,
 .after-procedurse {
+  width: 343px;
+  height: 328px;
   border-radius: 50%;
 }
 
@@ -308,7 +330,7 @@ body {
   display: inline;
 }
 
-.procedur-container{
+.procedur-container {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -419,7 +441,7 @@ body {
   background-color: var(--primary-color-dark-blue);
 }
 
-.contact-map{
+.contact-map {
   flex-shrink: 0;
   border-radius: 32px;
   width: 605px;
@@ -465,6 +487,7 @@ body {
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-nav {
@@ -487,6 +510,10 @@ body {
 .svg-container {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-svg {
+  fill: var(--primary-white);
 }
 
 .footer-adress-text {
