@@ -72,6 +72,15 @@ a {
   display: inline-block;
 }
 
+a,
+button,
+input,
+textarea,
+select,
+svg {
+  transition: all 0.2s ease;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -94,9 +103,37 @@ body {
   margin: 0;
   padding: 0;
 }
+/*  */
+
+.change-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 500px;
+}
+
+.svg-icon {
+  position: absolute;
+  top: 336px;
+  right: 295px;
+}
+
+.svg-2 {  
+  position: absolute;
+  right: 6px;
+  top: 270px;
+}
+
+.svg-3{
+  position: absolute;
+  top: 32px;
+  right: 0px;
+}
 
 .hero-section {
-  padding: 32px 0px 127px;
+  position: relative;
+  padding: 120px 0px 127px;
   background:
     linear-gradient(
       91deg,
@@ -105,7 +142,7 @@ body {
       rgba(255, 255, 255, 0.19) 53%,
       rgba(255, 255, 255, 0) 74%
     ),
-    url(../images/background-hero-section.webp);
+    url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -130,6 +167,14 @@ body {
 
 .header {
   padding: 32px 0;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff40;
+  backdrop-filter: blur(10px);
 }
 
 .container {
@@ -170,7 +215,7 @@ body {
 
 .nav-header-link {
   display: flex;
-  gap: 36px;
+  gap: 56px;
 }
 
 .svg-container-header {
@@ -204,9 +249,7 @@ body {
 
 .change-flex {
   display: flex;
-  margin: 0 auto;
-  width: 100%;
-
+  justify-content: space-between;
 }
 
 .text-change {
@@ -215,12 +258,6 @@ body {
   flex-direction: column;
 }
 
-.change-img {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 500px;
-}
 
 .change-text {
   margin-bottom: 40px;
@@ -247,7 +284,13 @@ body {
   border-radius: 50%;
 }
 
+.us {
+  display: block;
+  line-height:;
+}
+
 .change {
+  position: relative;
   line-height: 1.16;
   font-weight: 800;
   margin-right: 32px;
@@ -282,6 +325,7 @@ body {
   background-color: grey; /* Щоб видно було результат */
   border-radius: 32px;
   padding: 29px 0px 24px 0px;
+  fill: var(--primary-color-blue);
 }
 
 .article span {
@@ -477,6 +521,7 @@ body {
 .footer {
   background-color: var(--primary-color-dark-blue);
   padding: 56px 0px;
+  position: relative;
 }
 
 .footer-container {
@@ -593,17 +638,26 @@ body {
   color: var(--primary-color-dark-blue);
 }
 
-/* other */
-
-/* container */
-
-/* span */
-
 .change-text:nth-child(1) {
   display: block;
 }
 
-.hostipal,
-span {
+.hostipal {
   display: block;
+}
+
+.br {
+  display: block;
+}
+
+
+.strong {
+  text-transform: capitalize;
+}
+
+.ftr {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
